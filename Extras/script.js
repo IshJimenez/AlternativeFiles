@@ -45,6 +45,12 @@ save()
 // Create a varaible, powerLvl, and set it equal to a num
 // Log the whoAge to the console
 
+function savee(){
+    console.log(clout)
+}
+
+savee()
+
 let powerLvl = 10000
 console.log(powerLvl)
 
@@ -124,3 +130,83 @@ incrementLaps()
 incrementLaps()
 
 console.log(lapsCompleted)
+
+let user = "Yugi"
+
+// Create a variable, message, that stores the string "does heart of the cards make you a cheater"
+
+let message = "does heart of the cards make you a cheater"
+
+console.log(message)
+
+console.log(user + ", " + message + "?")
+
+// Create a variable, theTruth, that contains the message we have logged.
+
+let theTruth = user + ", " + message + "?"
+
+console.log(theTruth)
+
+// Create 2 variables, name and card. The name variable will be Yugi and the card will be Dark Magician.
+// Create a 3rd variable, that contatenates the 2 strings and log it to the console.
+
+let name = "Yugi"
+
+let card = "Dark Magician"
+
+let shockerNoWay = name + " yells I summon the " + card + "!"
+
+console.log(shockerNoWay)
+
+// Grab the welcomeE paragraphand store it in a variable called welcomeEL
+// Create 2 variables (name1 & quote) that contains a name and a quote
+// Create a 3rd variable to store those variables 
+// Render the welcome message using weclomeE.innerText using the 3rd variable
+
+let welcomeEL = document.getElementById("welcomeE")
+
+let name1 = "Pegasus."
+let quote = "I play the magic card ToonWorld"
+let welc = quote + " yells " + name1
+
+welcomeEL.innerText = welc
+
+// More practice
+
+let welcomeXL = document.getElementById("welcomeZ")
+
+let name2 = "Joey."
+let quote2 = "I play the flaming swordsman"
+let welcZ = quote2 + " says " + name2
+
+welcomeXL.innerText = welcZ
+
+// You guessed it more practice
+
+let welcomeKa = document.getElementById("welcomeK")
+
+let name3 = "Kaiba screams "
+let quote3 = "impossible no one has been able to assemble all 5 pieces of Exodia."
+let welcK = name3 + quote3
+
+welcomeKa.innerText = welcK
+
+welcomeKa.innerText += " 😢"
+
+// If instead of storing variables into a variable another way would be 
+
+// welcomeKa.innerText = name3 + quote3
+
+// If you wanted to update with emoji without changing code above it
+
+// welcomeKa.innerText = welcomeKa.innerText + " 😢"
+
+// But to make it fancier
+
+// welcomeKa.innerText += " 😢"
+
+// Give same response as above
+
+
+
+
