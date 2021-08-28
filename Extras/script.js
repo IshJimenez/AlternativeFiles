@@ -21,6 +21,27 @@ function subb() {
     countE.innerText = count
 }
 
+let countZ = document.getElementById("count2")
+
+let clout = 0;
+
+function add2() {
+    clout = clout + 2
+    countZ.innerText = clout 
+}
+
+function sub2() {
+    clout = clout - 2
+    countZ.innerText = clout
+}
+
+// Create a function, save(), which logs out the count when its called
+
+function save() {
+    console.log(count)
+}
+
+save()
 // Create a varaible, powerLvl, and set it equal to a num
 // Log the whoAge to the console
 
