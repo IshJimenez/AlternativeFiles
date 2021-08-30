@@ -8,18 +8,48 @@
 
 let countE = document.getElementById("count-el")
 
-let count = 0;
+let count = 0
 
 function addd() {
-    count = count + 1
+    // count = count + 1
+    count += 1
     countE.innerText = count
     
 }
 
 function subb() {
-    count = count - 1
+    // count = count - 1
+    count -= 1
     countE.innerText = count
 }
+
+// -) Grab the saveEl paragraph and store it in a variable called saveEll
+let saveEll = document.getElementById("saveEl")
+
+// Create a function, save(), which logs out the count when its called
+
+function save() {
+
+    // -) Create a variable that contains both the count and the dash separator, "12 -"
+
+    // let countz = " " + count + " - "
+    // Will work with innerText since it will read the space as a character and will give it a space on the page
+
+    let countz =  count + " - "
+
+    // -) Render the variable in the saveEll using innerText
+
+    saveEll.innerHTML += countz
+
+    // -) Make sure to not delet the exisiting content of the paragraph 
+
+    countE.textContent = 0
+    count = 0
+
+    console.log(count)
+    }
+
+// save()
 
 let countZ = document.getElementById("count2")
 
@@ -35,21 +65,14 @@ function sub2() {
     countZ.innerText = clout
 }
 
-// Create a function, save(), which logs out the count when its called
-
-function save() {
-    console.log(count)
-}
-
-save()
-// Create a varaible, powerLvl, and set it equal to a num
-// Log the whoAge to the console
-
 function savee(){
     console.log(clout)
 }
 
 savee()
+
+// Create a varaible, powerLvl, and set it equal to a num
+// Log the whoAge to the console
 
 let powerLvl = 10000
 console.log(powerLvl)
