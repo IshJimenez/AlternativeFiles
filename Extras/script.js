@@ -230,6 +230,29 @@ welcomeKa.innerText += " 😢"
 
 // Give same response as above
 
+// Create 2 variables, firstDude and secondDude
 
+// Concatenate the 2 variables into a third variable called pepInShow
 
+// Log pepInShow to the console
 
+let firstDude = "Gon"
+
+let secondDude = "Kurapika"
+
+let pepInShow = firstDude + " and " + secondDude + " are in hxh"
+
+console.log(pepInShow)
+
+// Create a function that logs out "Hey there, Yugi!" when called
+
+let namew = "Yugi"
+
+let greeting = "Hi there,"
+
+function ooh() {
+    let greetingz = greeting + " " + namew + " ! "
+    console.log(greetingz)
+}
+
+ooh()
