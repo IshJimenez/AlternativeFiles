@@ -41,7 +41,7 @@ function save() {
 
     saveEll.innerHTML += countz
 
-    // -) Make sure to not delet the exisiting content of the paragraph 
+    // -) Make sure to not delete the exisiting content of the paragraph 
 
     countE.textContent = 0
     count = 0
@@ -256,3 +256,68 @@ function ooh() {
 }
 
 ooh()
+
+
+// Create 2 functions, add4P and rem1P and have them add/remove points from the the pointss variable
+// Call the functions to that the line below below logs out 10
+
+let pointss = 3
+
+function add4P() {
+    pointss += 4
+}
+
+function rem1p() {
+    pointss -= 1
+}
+
+add4P()
+add4P()
+rem1p()
+
+console.log(pointss)
+
+// When the user clicks the purchase button, render out
+// "Something went wrong, please try again" in the paragraph
+// that has the id="error".
+
+let way = document.getElementById("error")
+
+function errorr(){
+    way.innerText  = "Something went wrong, please try again"
+}
+
+let num1 = 8
+let num2 = 2
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
+
+// Create four functions: add(), subtract(), divide(), multiply()
+// Call the correct function when the user clicks on one of the buttons
+// Perform the given calculation using num1 and num2
+// Render the result of the calculation in the paragraph with id="sum-el"
+
+// E.g. if the user clicks on the "Plus" button, you should render
+// "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
+
+let result = document.getElementById("sum-el")
+
+function add(){
+     let addd = num1 + num2
+     result.innerHTML = "Sum: " + addd
+}
+
+function sub(){
+    let subb = num1 - num2
+    result.innerHTML = "Sum: " + subb
+}
+
+function div(){
+    let divv = num1 / num2
+    result.innerHTML = "Sum: " + divv
+}
+
+function mul(){
+    let mull = num1 * num2
+    result.innerHTML = "Sum: " + mull
+}
