@@ -1,0 +1,13 @@
+h1 {
+    color: orange;
+}
+body {
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}
+#message-el {
+    font-style: italic;
+}

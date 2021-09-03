@@ -48,8 +48,15 @@ if (atge < 100) {
 }
 
 let firstC= 10
-let secondC= 7
+let secondC= 11
 let summ = firstC + secondC
+let hasBlackJack = false
+
+// Create a variable called isAlive and assign it to T
+let isAlive = true
+
+// Declare a variable called message and assign its value to an empty string
+let message = ""
 
 // Write the conditional according to these rules:
 
@@ -57,10 +64,19 @@ let summ = firstC + secondC
 // else if exactly 21 -> ""Big money you won!!" 🥳"
 // else -> "You're out of the game! 😭"
 
+// Flip its value to false in the appropriate code block 
+// Reassign the message variable to the string we are logging out 
 if (summ <= 20) {
-    console.log("Would you like to draw a new card?")
-} else if ( sum === 21 ) {
-    console.log("Sorry you're a loser")
+    message = "Would you like to draw a new card?"
+} else if ( summ === 21 ) {
+    message = "Big money you won!!"
+    hasBlackJack = true
 } else {
-    console.log("Sorry you're a loser")
+    message = "Sorry you're a loser"
+    isAlive = false
 }
+
+// Cash Out!
+console.log(hasBlackJack)
+
+console.log(message)
