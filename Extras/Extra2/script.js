@@ -58,7 +58,21 @@ let isAlive = true
 // Declare a variable called message and assign its value to an empty string
 let message = ""
 
-// Write the conditional according to these rules:
+// Cash Out!
+// console.log(hasBlackJack)
+
+let messageEl = document.getElementById("message-el")
+
+let sumEl = document.getElementById("sum-el")
+
+// Can use querySelector as an alternative as well
+
+// let sumEl = document.querySelector("#sum-el")
+
+// 2. Create a startGame() function. Move the conditional
+
+function startGame() {
+    // Write the conditional according to these rules:
 
 // if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
 // else if exactly 21 -> ""Big money you won!!" 🥳"
@@ -75,8 +89,8 @@ if (summ <= 20) {
     message = "Sorry you're a loser"
     isAlive = false
 }
+sumEl.textContent = "Sum: " + summ
+messageEl.textContent = message
+}
 
-// Cash Out!
-console.log(hasBlackJack)
 
-console.log(message)
