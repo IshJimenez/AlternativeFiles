@@ -65,6 +65,8 @@ let messageEl = document.getElementById("message-el")
 
 let sumEl = document.getElementById("sum-el")
 
+let cardsEl = document.getElementById("cards-el")
+
 // Can use querySelector as an alternative as well
 
 // let sumEl = document.querySelector("#sum-el")
@@ -72,6 +74,10 @@ let sumEl = document.getElementById("sum-el")
 // 2. Create a startGame() function. Move the conditional
 
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
     // Write the conditional according to these rules:
 
 // if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
@@ -89,8 +95,15 @@ if (summ <= 20) {
     message = "Sorry you're a loser"
     isAlive = false
 }
+cardsEl.textContent = "Cards: " + firstC + " - " + secondC
 sumEl.textContent = "Sum: " + summ
 messageEl.textContent = message
 }
 
+function newCard() {
+    console.log("Drawing a new card from the deck")
+    let newCard = 2
+    summ += newCard
+    renderGame()
+}
 

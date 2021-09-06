@@ -21,3 +21,13 @@ body {
     border: none;
     border-radius: 2px;
 }
+
+#but2{
+    color: #016f32;
+    width     : 150px;
+    background: goldenrod;
+    padding: 5px 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+}
