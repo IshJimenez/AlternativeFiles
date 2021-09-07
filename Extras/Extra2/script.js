@@ -47,8 +47,9 @@ if (atge < 100) {
     console.log("Not elegible, you have already gotten one")
 }
 
-let firstC= 10
-let secondC= 11
+let firstC = 10
+let secondC = 11
+let cards = [firstC, secondC]
 let summ = firstC + secondC
 let hasBlackJack = false
 
@@ -95,7 +96,7 @@ if (summ <= 20) {
     message = "Sorry you're a loser"
     isAlive = false
 }
-cardsEl.textContent = "Cards: " + firstC + " - " + secondC
+cardsEl.textContent = "Cards: " + cards[0] + " - " + cards[1] 
 sumEl.textContent = "Sum: " + summ
 messageEl.textContent = message
 }
