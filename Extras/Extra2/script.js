@@ -105,6 +105,31 @@ function newCard() {
     console.log("Drawing a new card from the deck")
     let newCard = 2
     summ += newCard
+    cards.push(newCard)
+    console.log(cards)
     renderGame()
 }
 
+let extra = [8, 202]
+
+extra.push(9)
+
+console.log(extra)
+
+// Push the newMessage to the messages array, and then log out the array
+
+let messages = [
+    "Hey, how's it going?",        
+    "I'm great, thank you! How about you?",
+    "All good. Been working on my portfolio lately."
+]
+
+let newMessage = "Same here!"
+
+messages.push(newMessage)
+
+console.log(messages)
+
+messages.pop()
+
+console.log(messages)
