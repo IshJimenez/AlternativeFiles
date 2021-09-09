@@ -133,3 +133,13 @@ console.log(messages)
 messages.pop()
 
 console.log(messages)
+
+// Basics 
+
+for ( let count = 1; count < 11; count += 1) {
+    console.log("hey fool im at " + count)
+}
+
+for( let nCount = 10; nCount < 200; nCount += 10) {
+    console.log("Im so cool look at me Im at " + nCount)
+}
