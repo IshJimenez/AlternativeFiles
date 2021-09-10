@@ -47,8 +47,8 @@ if (atge < 100) {
     console.log("Not elegible, you have already gotten one")
 }
 
-let firstC = 10
-let secondC = 11
+let firstC = getRandomCard()
+let secondC = getRandomCard()
 let cards = [firstC, secondC]
 let summ = firstC + secondC
 let hasBlackJack = false
@@ -67,6 +67,10 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 
 let cardsEl = document.getElementById("cards-el")
+
+function getRandomCard() {
+    return 5
+}
 
 // Can use querySelector as an alternative as well
 
@@ -96,14 +100,19 @@ if (summ <= 20) {
     message = "Sorry you're a loser"
     isAlive = false
 }
-cardsEl.textContent = "Cards: " + cards[0] + " - " + cards[1] 
+cardsEl.textContent = "Cards: " 
+
+for( let x = 0; x < cards.length; x++) {
+    cardsEl.textContent += cards[x] + " | "
+}
+
 sumEl.textContent = "Sum: " + summ
 messageEl.textContent = message
 }
 
 function newCard() {
     console.log("Drawing a new card from the deck")
-    let newCard = 2
+    let newCard = getRandomCard()
     summ += newCard
     cards.push(newCard)
     console.log(cards)
@@ -143,3 +152,54 @@ for ( let count = 1; count < 11; count += 1) {
 for( let nCount = 10; nCount < 200; nCount += 10) {
     console.log("Im so cool look at me Im at " + nCount)
 }
+
+let cardss = [7, 3, 9]
+
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+
+for ( let x = 0; x < cardss.length; x++) {
+    console.log(cardss[x])
+}
+
+let sentence = ["Hello ", "my ", "name ", "is ", "SpongeBob"] 
+let greetingEl = document.getElementById("greeting-el")
+
+// Render the sentence in the greetingEl paragraph using a for loop and .textContent
+
+for ( let x = 0; x < sentence.length; x++) {
+    greetingEl.textContent += sentence[x] 
+}
+
+// If the words didnt have a space in sentence just add the " "
+
+// let sentence = ["Hello", "my", "name", "is", "SpongeBob"] 
+// let greetingEl = document.getElementById("greeting-el")
+
+// for ( let x = 0; x < sentence.length; x++) {
+//     greetingEl.textContent += sentence[x] + " "
+// }
+
+
+// More Practice 
+
+let pWLKakarot = 190
+let pWLVegeta = 191 
+
+function whoTheStrongest() {
+    if (pWLKakarot > pWLVegeta) {
+        return pWLKakarot
+    } else {
+        return pWLVegeta
+    }
+}
+
+let strongestMofo = whoTheStrongest()
+console.log(strongestMofo)
+
+function totalpower() {
+    return pWLKakarot + pWLVegeta
+}
+
+let canWeDefeatM = totalpower()
+console.log(canWeDefeatM)
