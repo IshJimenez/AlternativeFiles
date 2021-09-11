@@ -66,6 +66,14 @@ let sumEl = document.getElementById("sum-el")
 
 let cardsEl = document.getElementById("cards-el")
 
+let  player = {
+    name : "SpongeBob",
+    chips : 200
+}
+
+let playerInfo = document.getElementById("playerM")
+playerInfo.textContent = player.name + ": $ " + player.chips
+
 function getRandomCard() {
     let randomN = Math.floor ( Math.random() * 13 ) + 1
     if (randomN >= 10 ) {
@@ -120,13 +128,16 @@ sumEl.textContent = "Sum: " + summ
 messageEl.textContent = message
 }
 
+
 function newCard() {
+    if ( isAlive === true && hasBlackJack === false) {
     console.log("Drawing a new card from the deck")
     let newCard = getRandomCard()
     summ += newCard
     cards.push(newCard)
     console.log(cards)
     renderGame()
+}
 }
 
 let extra = [8, 202]
@@ -254,3 +265,35 @@ let isGohanStrongEnoughfterM = false
 if (isGohanStrongEnoughfterCell === false && isGohanStrongEnoughfterM === false) {
     showFacts()
 }
+
+// Create two boolean variables, likesBleach and likesHXH
+// Use an OR statement (||) to call recommendAnime() if either of those variables are true
+
+function recommendAnime() {
+    console.log("Hey, check out this show we think you will like!")
+}
+
+
+let likesHXH = true
+let likesBleach = false
+
+if (likesHXH === true || likesBleach === true) {
+    recommendAnime()
+}
+
+// Create an object that represents an RPG character.
+// It should contain at least one boolean, one string, one number, and one array
+// Log out at least two of the keys using the dot notation
+
+
+let cCreator = {
+    namee: "Skeletor",
+    class: "Necromancer",
+    good: true,
+    int: 125,
+    str: 20,
+    spells: ["raiseUndead", "shadowBolt", "bindingOfTheUndead"]
+}
+
+console.log(cCreator.spells)
+console.log(cCreator.int)
