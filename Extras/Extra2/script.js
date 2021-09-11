@@ -47,14 +47,12 @@ if (atge < 100) {
     console.log("Not elegible, you have already gotten one")
 }
 
-let firstC = getRandomCard()
-let secondC = getRandomCard()
-let cards = [firstC, secondC]
-let summ = firstC + secondC
+let cards = []
+let summ = 0
 let hasBlackJack = false
 
 // Create a variable called isAlive and assign it to T
-let isAlive = true
+let isAlive = false
 
 // Declare a variable called message and assign its value to an empty string
 let message = ""
@@ -69,9 +67,16 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 function getRandomCard() {
-    return 5
-}
+    let randomN = Math.floor ( Math.random() * 13 ) + 1
+    if (randomN >= 10 ) {
+      return 10  
+    } else if ( randomN === 1) {
+        return 11
+    } else {
+    return randomN
 
+}
+}
 // Can use querySelector as an alternative as well
 
 // let sumEl = document.querySelector("#sum-el")
@@ -79,6 +84,11 @@ function getRandomCard() {
 // 2. Create a startGame() function. Move the conditional
 
 function startGame() {
+    isAlive = true
+    let firstC = getRandomCard()
+    let secondC = getRandomCard()
+    cards = [firstC, secondC]
+    summ = firstC + secondC
     renderGame()
 }
 
@@ -203,3 +213,44 @@ function totalpower() {
 
 let canWeDefeatM = totalpower()
 console.log(canWeDefeatM)
+
+let randomNumber = Math.random()
+
+console.log(randomNumber)
+
+let flooredNumber = Math.floor(4.45632)
+
+console.log(flooredNumber)
+
+let randomNumberr = Math.floor( Math.random() * 6 ) + 1
+
+console.log(randomNumberr)
+
+// Create a function, rollDice(), that returns a random number between 1 and 6
+
+function rollDice() {
+    let randomNum = Math.floor( Math.random() * 7 ) 
+    return randomNum
+}
+
+let company = true
+let bob = true
+
+if (company === true && bob === true) {
+    console.log("yay") 
+}
+
+let isGohanStrongEnoughfterCell = false
+let isGohanStrongEnoughfterM = false
+
+// Create an if statement that checks that both variables are false.
+// If so, run the showFacts() function
+
+    function showFacts() {
+        console.log("He needs to keep training with his real dad Picollo....")
+}
+
+
+if (isGohanStrongEnoughfterCell === false && isGohanStrongEnoughfterM === false) {
+    showFacts()
+}
