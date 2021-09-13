@@ -297,3 +297,47 @@ let cCreator = {
 
 console.log(cCreator.spells)
 console.log(cCreator.int)
+
+// Create a person object that contains three keys: name, race, and class.
+// Write a character that has those values
+
+// Create a function, logData(), that uses the person object to create a
+// string in the following format: 
+// "Per is a orc and is a warrior"
+
+// Call the logData() function to verify that it works
+
+let person = {
+    name: "Obelisk",
+    race: "elf",
+    class: "mage"
+}
+
+function logData() {
+    console.log(person.name + " is a " + person.race + " and is a " + person.class)
+}
+
+logData()
+
+let agee = 66
+
+// less than 6 years old -> free
+// 6 to 17 years old     -> child discount
+// 18 to 26 years old    -> student discount
+// 27 to 66 years old    -> full price
+// over 66 years old     -> senior citizen discount
+
+// Create a conditional statement (if/else/else if) that logs out the discount
+// the passenger will get based upon the value of the age variable
+
+if ( agee < 6 ) {
+    console.log("hey you pay no money")
+} else if ( agee < 18 ) {
+    console.log (" child discount")
+} else if ( agee < 27 ) {
+    console.log (" student discount ")
+} else if ( agee <  67 ) {
+    console.log (" full price ")
+} else {
+    console.log (" senior citizen discount ")
+}
