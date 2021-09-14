@@ -341,3 +341,46 @@ if ( agee < 6 ) {
 } else {
     console.log (" senior citizen discount ")
 }
+
+let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+
+/* Use a for loop to log the following to the console:
+
+The 5 largest countries in the world:
+- China
+- India
+- United States
+- Indinesia
+- Pakistan
+*/
+
+for ( let x = 0; x < largeCountries.length; x++) {
+    console.log(" - " + largeCountries[x])
+}
+
+let largeCountriess = ["Tuvalu","India","USA","Indonesia","Monaco"]
+
+// You need to help me fixup the largeCountriess array so that 
+// China and Pakistan are added back into their respective places
+
+// Use push() & pop() and their counterparts unshift() & shift()
+
+largeCountriess.shift()
+console.log(largeCountriess)
+largeCountriess.unshift("China")
+console.log(largeCountriess)
+largeCountriess.pop()
+console.log(largeCountriess)
+largeCountriess.push("Pakistan")
+console.log(largeCountriess)
+
+let dayOfMonth = 13
+let weekday = "Friday"
+
+// If it is Friday the 13th, log out this spooky face: 😱
+// Use the logical "AND operator" -> &&
+
+if (dayOfMonth === 13 && weekday === "Friday") {
+    console.log("😱")
+}
+
