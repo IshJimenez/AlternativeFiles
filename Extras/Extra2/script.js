@@ -384,3 +384,34 @@ if (dayOfMonth === 13 && weekday === "Friday") {
     console.log("😱")
 }
 
+let hands = ["rock", "paper", "scissor"]
+
+// Create a function that returns a random item from the array
+
+let randoo = Math.floor(Math.random() * hands.length);
+
+function rando() {
+    return hands[randoo]
+}
+
+console.log( rando() )
+
+let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+let appleShelf = document.getElementById("apple-shelf")
+let orangeShelf = document.getElementById("orange-shelf")
+
+// Create a function that puts the apples onto the appleShelf
+// and the oranges onto the orangeShelf. Use a for loop,
+// a conditional statement, and the textContent property.
+
+function fufu() {
+    for (let x = 0; x < fruit.length; x++) {
+        if( fruit[x] === "🍎") {
+            appleShelf.textContent += "🍎"
+        } else if ( fruit[x] === "🍊" ) {
+            orangeShelf.textContent += "🍊"
+        }
+    }
+}
+
+fufu()
